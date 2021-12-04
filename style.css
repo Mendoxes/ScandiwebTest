@@ -1,0 +1,11 @@
+.cardM{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.eachCard{
+    margin:2rem;
+    text-align: center;
+}
