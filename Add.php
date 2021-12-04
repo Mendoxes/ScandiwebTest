@@ -56,7 +56,7 @@ if (isset($_POST['Submit'])){
                 </div>
                 <div class="typeSwitch"></div>
                 <div class="form-group">
-                    <input class="btn btn-success" type="submit" name="Submit" value="Submit" 
+                    <input class="btn btn-success" type="submit" name="Submit" value="Save" 
                     >
                    <a href="Index.php"> <input class="btn btn-danger" type="button" name="Submit" value="Cancel" 
                     ></a>
