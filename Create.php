@@ -21,7 +21,7 @@ VALUES ('$id', '$name', '$price', '$description','$data');";
 $obj->query($sql);
 
 $obj->execute();
-header("Location:Index.php");
+header("Location:index.php");
 }
 
 else {echo "this sku alredy exists";}
