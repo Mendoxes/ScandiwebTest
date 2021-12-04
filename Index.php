@@ -25,7 +25,7 @@ $delete->skuData($_POST['chk_id']);
     <title>Document</title>
 </head>
 <body>
-    <button>ADD</button>
+  
 
 <a href="Add.php"><button type="button" class="btn btn-success">ADD</button></a>
 <form action="index.php" method="post">                         
