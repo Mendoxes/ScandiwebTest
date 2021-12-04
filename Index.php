@@ -27,8 +27,8 @@ $delete->skuData($_POST['chk_id']);
 <body>
     
 
-<a href="add.php"><button type="button" class="btn btn-success">ADD</button></a>
-<form action="index.php" method="post">
+<a href="Add.php"><button type="button" class="btn btn-success">ADD</button></a>
+<form action="Index.php" method="post">
 <button type="submit" class="delete-product-btn btn btn-danger">MASS DELETE</button>
 <div class="cardM"><?php $obj->setData("products")->getData();?></div>
 
