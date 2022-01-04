@@ -11,7 +11,12 @@
 }
 
 
-.massDelete .addButton{
+.massDelete {
+
+    float:right;
+}
+
+.addButton{
 
     float:right;
 }
