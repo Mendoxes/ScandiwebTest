@@ -3,9 +3,7 @@ require_once "Product.php";
 require_once "SubProduct.php";
 
 if (isset($_POST['Submit'])){
-    // echo "goodi";
-    // print_r($_POST);
-    
+
     $obj = new $_POST['type']($_POST['name'],$_POST['price'],$_POST['type'],$_POST['sku']);
 
     $obj->setDescription($_POST);
@@ -18,19 +16,8 @@ if (isset($_POST['Submit'])){
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 <body>
-
-
-
-
-
-
-
-
-
-
-
 <div class="col-md-12">
-            <!--<form action="add.php" method="post" name="form1" onsubmit = "return(validate());">-->
+           
             <form action="" method="post" name="form1" id="product_form">
                
                 <div class="form-group">
@@ -86,11 +73,10 @@ $("#productType").on("change", function() {
 , furniture: "<div class='form-group selectable' name=furniture id=furniture><label for=height>Height</label> <input required  pattern=[0-9]+ title='please enter only numbers' type=text name=height class='form-control w-50' id=height aria-describedby=heighthelp> <label for=width>Width</label><input required  pattern=[0-9]+ title='please enter only numbers' type=text name=width class='form-control w-50' id=width aria-describedby=widthhelp> <label for=length>Length</label><input required  pattern=[0-9]+ title='please enter only numbers' type=text name=length class='form-control w-50' id=length aria-describedby=lengthhelp> <small>Please provide dimensions in HxWxL format.</small></div>"
 
     }
-        // $(".selectable").hide()     
+     
      
         $(".typeSwitch")[0].innerHTML = innerArray[$(this).val()];
-        // const a = $("#" + $(this).val()).show();
-        // console.log(a);
+      
       
     })
 </script>

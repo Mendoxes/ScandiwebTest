@@ -1,11 +1,6 @@
 <?php
-
 require "Database.php";
-
-
-
 class Display {
-
 public $db;
 public $result;
 function __construct(){
@@ -14,15 +9,9 @@ function __construct(){
 public function setData($data) {
    $this->db->query("SELECT * FROM $data");
 return $this;
-
 }
    function getData(){
     $this->result = $this->db->resultset();
-    
-// print_r($this->result);
-// echo count($k);
-
-
 for ($i = 0 ; $i<=count($this->result)-1;$i++){
 
     echo "<div class='card eachCard' style='width: 18rem;'>
@@ -37,16 +26,5 @@ for ($i = 0 ; $i<=count($this->result)-1;$i++){
     </ul>
   </div>";
 }
+}  
 }
-
-    
-}
-
-
-
-
-// $obj = new Display();
-// $obj->setData("products")->getData();
-// $db = new Database();
-// $db->query("SELECT * FROM products");
-// $k = $db->resultset();

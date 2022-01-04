@@ -2,12 +2,9 @@
 require_once "Display.php";
 require_once "Delete.php";
 $obj = new Display();
-// echo $obj->skuData();
 if (!empty($_POST['chk_id'])){
-
 $delete = new Delete();
 $delete->skuData($_POST['chk_id']);
-
 }
 
 ?>
@@ -27,9 +24,9 @@ $delete->skuData($_POST['chk_id']);
 <body>
   
 
-<a href="Add.php"><button type="button" class="btn btn-success">ADD</button></a>
+<a href="Add.php"><button type="button" class="btn btn-success addButton">ADD</button></a>
 <form action="index.php" method="post">                         
-<button type="submit" id="delete-product-btn" class="btn btn-danger">MASS DELETE</button>
+<button type="submit" id="delete-product-btn" class="btn btn-danger massDelete">MASS DELETE</button>
 <div class="cardM"><?php $obj->setData("products")->getData();?></div>
 
 </form>

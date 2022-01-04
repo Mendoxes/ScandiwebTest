@@ -9,3 +9,9 @@
     margin:2rem;
     text-align: center;
 }
+
+
+.massDelete, .addButton{
+
+    float:right;
+}

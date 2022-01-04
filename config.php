@@ -8,13 +8,6 @@
     define("DB_CATEGORY","products");
 
 
-
-    // $this->servername = "eu-cdbr-west-01.cleardb.com";
-    // $this->username = "b57a5f2109d90d";
-    // $this->password = "325f8389";
-    // $this->dbname = "heroku_319e0a0f7a8cdf0";
-
-
     // define("DB_HOST", "localhost");
     // define("DB_USER", "root");
     // define("DB_PWD", "");

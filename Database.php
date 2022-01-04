@@ -1,8 +1,5 @@
 <?php 
 require "config.php";
-
-
-
 class Database {
 
 
