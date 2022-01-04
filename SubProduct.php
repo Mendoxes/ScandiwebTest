@@ -14,7 +14,7 @@ $this->description = $this->description ."MB";
        echo  $this->description;
     }
     function getFullDescription(){
-            new Create($this->id, $this->name, $this->price, $this->description,'size');
+            new Create($this->id, $this->name, $this->price, $this->description,'SIZE');
     }
 
 
@@ -34,7 +34,7 @@ $this->description = $this->description . "KG";
        }
        function getFullDescription(){
    
-        new Create($this->id, $this->name, $this->price, $this->description,'weight');
+        new Create($this->id, $this->name, $this->price, $this->description,'WEIGHT');
        }
    
    
