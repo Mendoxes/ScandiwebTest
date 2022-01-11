@@ -54,6 +54,6 @@ class Furniture extends Product
     }
     function getFullDescription()
     {
-        new Create($this->id, $this->name, $this->price, $this->description, 'dimensions');
+        new Create($this->id, $this->name, $this->price, $this->getDescription(), 'dimensions');
     }
 }
