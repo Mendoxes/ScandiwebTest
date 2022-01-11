@@ -4,7 +4,7 @@ require "Validate.php";
 
 class Create extends Validate
 {
-    private $skuNumber;
+    protected $skuNumber;
     private $validator;
     function __construct($id, $name, $price, $description, $data)
     {
