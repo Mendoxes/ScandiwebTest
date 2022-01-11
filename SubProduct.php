@@ -7,13 +7,7 @@ class DVD extends Product
     protected $description;
     function setDescription($data)
     {
-        $obj = new Description($data);
-        $this->description = $obj->__construct($data);
-        $this->description = $this->description . "MB";
-    }
-    function getDescription()
-    {
-        echo  $this->description;
+        $this->description = $data["size"] ."MB";
     }
     function getFullDescription()
     {
@@ -26,14 +20,7 @@ class Book extends Product
     protected $description;
     function setDescription($data)
     {
-        $obj = new Description($data);
-        $this->description = $obj->__construct($data);
-        $this->description = $this->description . "KG";
-    }
-
-    function getDescription()
-    {
-        echo  $this->description . "KG";
+        $this->description = $data["weight"] ."KG";
     }
     function getFullDescription()
     {
@@ -46,11 +33,6 @@ class Furniture extends Product
     function setDescription($data)
     {
         $this->description = $data["height"] ."X".$data["width"]."X".$data["length"]."cm" ;
-        // $this->description = $this->description . "cm";
-    }
-    function getDescription()
-    {
-        echo  $this->description . "cm";
     }
     function getFullDescription()
     {

@@ -15,5 +15,5 @@ abstract class Product
         $this->id = $id;
     }
     abstract function setDescription($data);
-    abstract function getDescription();
+    abstract function getFullDescription();
 }
