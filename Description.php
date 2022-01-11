@@ -1,5 +1,7 @@
 <?php
 
+print_r($_POST);
+
 class Description
 {
     function __construct($PostData)
