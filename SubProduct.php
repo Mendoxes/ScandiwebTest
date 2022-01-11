@@ -1,60 +1,60 @@
 <?php
-
 require "Description.php";
 require_once "Create.php";
-class DVD extends Product{
- protected $description ;
-    function setDescription($data){
+
+class DVD extends Product
+{
+    protected $description;
+    function setDescription($data)
+    {
         $obj = new Description($data);
-$this->description = $obj->__construct($data);
-$this->description = $this->description ."MB";
-
+        $this->description = $obj->__construct($data);
+        $this->description = $this->description . "MB";
     }
-    function getDescription(){
-       echo  $this->description;
+    function getDescription()
+    {
+        echo  $this->description;
     }
-    function getFullDescription(){
-            new Create($this->id, $this->name, $this->price, $this->description,'size');
+    function getFullDescription()
+    {
+        new Create($this->id, $this->name, $this->price, $this->description, 'size');
     }
-
-
 }
 
-class Book extends Product{
-    protected $description ;
-    function setDescription($data){
+class Book extends Product
+{
+    protected $description;
+    function setDescription($data)
+    {
         $obj = new Description($data);
-$this->description = $obj->__construct($data);
-$this->description = $this->description . "KG";
-
+        $this->description = $obj->__construct($data);
+        $this->description = $this->description . "KG";
     }
-   
-       function getDescription(){
-          echo  $this->description . "KG";
-       }
-       function getFullDescription(){
-   
-        new Create($this->id, $this->name, $this->price, $this->description,'weight');
-       }
-   
-   
-   }
-class Furniture extends Product{
-    protected $description ;
-    function setDescription($data){
+
+    function getDescription()
+    {
+        echo  $this->description . "KG";
+    }
+    function getFullDescription()
+    {
+        new Create($this->id, $this->name, $this->price, $this->description, 'weight');
+    }
+}
+class Furniture extends Product
+{
+    protected $description;
+    function setDescription($data)
+    {
         $obj = new Description($data);
-$this->description = $obj->__construct($data);
-$this->description = $this->description ."cm";
-
+        $this->description = $obj->__construct($data);
+        $this->description = $this->description . "cm";
     }
-   
-       function getDescription(){
-          echo  $this->description ."cm";
-       }
-       function getFullDescription(){
-   
-        new Create($this->id, $this->name, $this->price, $this->description,'dimensions');
-       }
-   
-   
-   }
+    function getDescription()
+    {
+        echo  $this->description . "cm";
+    }
+    function getFullDescription()
+    {
+        new Create($this->id, $this->name, $this->price, $this->description, 'dimensions');
+    }
+}
