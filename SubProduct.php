@@ -1,5 +1,4 @@
 <?php
-require "Description.php";
 require_once "Create.php";
 
 class DVD extends Product
