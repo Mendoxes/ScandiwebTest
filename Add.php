@@ -2,8 +2,7 @@
 require_once "Product.php";
 require_once "SubProduct.php";
 
-if (isset($_POST['Submit'])) 
-{
+if (isset($_POST['Submit'])) {
     $obj = new $_POST['type']($_POST['name'], $_POST['price'], $_POST['type'], $_POST['sku']);
     $obj->setDescription($_POST);
     $obj->getFullDescription();
@@ -47,15 +46,15 @@ if (isset($_POST['Submit']))
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 <script>
-    $("#productType").on("change", function() 
-    {
-        const innerArray = 
-        {
+    $("#productType").on("change", function()
+     {
+        const innerArray = {
             DVD: "<div class='form-group selectable' name=DVD id=DVD > <label for=size>Size</label><input required  type=text name=size  pattern=[0-9]+ title='Numbers' class=form-control w-50 id=size aria-describedby=sizehelp> <small>Please provide size in MB format.</small></div>",
             book: "<div class='form-group selectable' name=book id=book><label for=weight>Weight</label><input required  type=text  pattern=[0-9]+ title='please enter only numbers' name=weight class=form-control w-50 id=weight aria-describedby=weighthelp><small>Please provide weight in Kg format.</small></div>",
             furniture: "<div class='form-group selectable' name=furniture id=furniture><label for=height>Height</label> <input required  pattern=[0-9]+ title='please enter only numbers' type=text name=height class='form-control w-50' id=height aria-describedby=heighthelp> <label for=width>Width</label><input required  pattern=[0-9]+ title='please enter only numbers' type=text name=width class='form-control w-50' id=width aria-describedby=widthhelp> <label for=length>Length</label><input required  pattern=[0-9]+ title='please enter only numbers' type=text name=length class='form-control w-50' id=length aria-describedby=lengthhelp> <small>Please provide dimensions in HxWxL format.</small></div>"
         }
         $(".typeSwitch")[0].innerHTML = innerArray[$(this).val()];
-    })
+     })
 </script>
+
 </html>

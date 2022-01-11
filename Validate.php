@@ -11,12 +11,9 @@ class Validate
    {
       $this->db->query("SELECT * FROM `products` WHERE `sku` = '$data'");
       $this->result = $this->db->resultset();
-      if (!empty($this->result)) 
-      {
+      if (!empty($this->result)) {
          return true;
-      } 
-      else 
-      {
+      } else {
          return false;
       }
    }

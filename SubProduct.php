@@ -46,7 +46,8 @@ class Furniture extends Product
     function setDescription($data)
     {
         $obj = new Description($data);
-        $this->description = $obj->__construct($data);
+        $this->description = $data["width"];
+        // $this->description = $obj->__construct($data);
         $this->description = $this->description . "cm";
     }
     function getDescription()

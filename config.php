@@ -1,4 +1,4 @@
-    <?php   
+    <?php
     define("DB_HOST", "eu-cdbr-west-01.cleardb.com");
     define("DB_USER", "b57a5f2109d90d");
     define("DB_PWD", "325f8389");

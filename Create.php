@@ -11,17 +11,14 @@ class Create extends Validate
         $this->skuNumber = $id;
         parent::__construct();
         $this->validator = $this->skuData($id);
-        if (!$this->validator) 
-        {
+        if (!$this->validator) {
             $obj = new Database();
             $sql = "INSERT INTO `products` (`sku`, `name`, `price`, `attributes`,`attrType`) VALUES ('$id', '$name', '$price', '$description','$data');";
             $obj->query($sql);
             $obj->execute();
             header("Location:index.php");
-        }
-         else 
-         {
+        } else {
             echo "this sku alredy exists";
-         }
+        }
     }
 }
