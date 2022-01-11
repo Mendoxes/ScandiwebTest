@@ -24,9 +24,9 @@ if (!empty($_POST['chk_id']))
         <button id="add-product-btn" type="button" style="float: right;" class="btn btn-success">ADD</button>
     </a>
     <form action="index.php" method="post">
-        <button type="submit" style="float: right;" id="delete-product-btn" class="btn btn-danger">MASSs DELETE</button>
+        <button type="submit" style="float: right;" id="delete-product-btn" class="btn btn-danger">MASS DELETE</button>
         <div class="cardM">
-            <?php $obj->setData("products")->getData(); ?>
+            <?php $obj->setData("products")->getData(); print_r($_POST) ?>
         </div>
     </form>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
