@@ -45,7 +45,7 @@ class Furniture extends Product
     protected $description;
     function setDescription($data)
     {
-        $this->description = $data["height"] ."X".$data["width"]."X".$data["length"] ;
+        $this->description = $data["height"] ."X".$data["width"]."X".$data["length"]."cm" ;
         // $this->description = $this->description . "cm";
     }
     function getDescription()
@@ -54,6 +54,6 @@ class Furniture extends Product
     }
     function getFullDescription()
     {
-        new Create($this->id, $this->name, $this->price, $this->getDescription(), 'dimensions');
+        new Create($this->id, $this->name, $this->price, $this->description, 'dimensions');
     }
 }
